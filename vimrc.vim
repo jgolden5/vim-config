@@ -15,7 +15,7 @@ nnoremap <Space> <Nop> "this allows for space to be used exclusively as the lead
 let mapleader = " "
 set notimeout
 
-nnoremap ZA :qa<CR>
+nnoremap ZA :xa<CR>
 
 nnoremap <Leader>h <C-w>h
 nnoremap <Leader>j <C-w>j
