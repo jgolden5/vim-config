@@ -11,9 +11,11 @@ command W write
 command Wn wnext
 command WN wnext
 
-nnoremap <Space> <Nop> "this allows for space to be used exclusively as the leader key
+nnoremap <Space> <Nop>
 let mapleader = " "
-set notimeout
+set notimeout "any keys part of a multi-key keymapping will wait indefinitely for the next key until a match or an interrupt
+set ttimeout "terminal keys (builtin special chars not requiring an additional keypress, such as escape) will time out as indicated by ttimeoutlen var
+set ttimeoutlen=500
 
 nnoremap ZA :xa<CR>
 
