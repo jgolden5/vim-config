@@ -18,6 +18,7 @@ set ttimeout "terminal keys (builtin special chars not requiring an additional k
 set ttimeoutlen=500
 
 nnoremap ZA :xa<CR>
+nnoremap !@ :%!
 
 nnoremap <Leader>h <C-w>h
 nnoremap <Leader>j <C-w>j
