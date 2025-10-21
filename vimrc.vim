@@ -36,3 +36,9 @@ nnoremap <Leader>H <C-w>H
 nnoremap <Leader>J <C-w>J
 nnoremap <Leader>K <C-w>K
 nnoremap <Leader>L <C-w>L
+
+"tab navigation
+nnoremap <Leader>tc :tabclose<CR>
+nnoremap <Leader>tn :tabnext<CR>
+nnoremap <Leader>to :tabnew<CR>
+nnoremap <Leader>tp :tabprevious<CR>
