@@ -38,6 +38,7 @@ nnoremap <Leader>tc :tabclose<CR>
 nnoremap <Leader>tn :tabnext<CR>
 nnoremap <Leader>to :tabnew<CR>
 nnoremap <Leader>tp :tabprevious<CR>
+nnoremap <Leader>t> :tabmove<CR>
 
 "copy/paste/clipboard
 nnoremap <Leader>ya mmggVG"+y'mzz
