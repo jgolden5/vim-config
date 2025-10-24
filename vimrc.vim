@@ -53,3 +53,6 @@ vnoremap <Leader>p "+p
 "Miscellaneous Keymaps
 nnoremap ZA :xa<CR>
 nnoremap !@ :%!
+
+"map helps
+nnoremap <Leader>? :echo system("grep 'noremap .Leader.' ~/.vimrc")<CR>
