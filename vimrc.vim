@@ -49,6 +49,7 @@ nnoremap <Leader>p "+p
 "visual mode
 vnoremap <Leader>c "+y
 vnoremap <Leader>p "+p
+vnoremap <leader>g y:!start "https://www.google.com/search?q=<C-r>0"<CR>
 
 "Miscellaneous Keymaps
 nnoremap ZA :xa<CR>
