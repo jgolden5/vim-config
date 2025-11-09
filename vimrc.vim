@@ -50,7 +50,7 @@ nnoremap <Leader>p "+p
 vnoremap <Leader>c "+y
 vnoremap <Leader>p "+p
 vnoremap <Leader>g y:!open "https://www.google.com/search?q=<C-r>0"<CR>
-vnoremap <Leader>u "+y:!open $(pbpaste)<CR>
+vnoremap <Leader>s "+y:!open $(pbpaste)<CR><CR>
 
 "Miscellaneous Keymaps
 nnoremap ZA :xa<CR>
