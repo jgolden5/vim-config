@@ -49,8 +49,12 @@ nnoremap <Leader>p "+p
 "visual mode
 vnoremap <Leader>c "+y
 vnoremap <Leader>p "+p
-vnoremap <Leader>g y:!open "https://www.google.com/search?q=<C-r>0"<CR>
-vnoremap <Leader>s "+y:!open $(pbpaste)<CR><CR>
+vnoremap <Leader>g y:!start "https://www.google.com/search?q=<C-r>0"<CR><CR>
+vnoremap <Leader>s "+y:!start $(pbpaste)<CR><CR>
+
+"AI keymaps
+nnoremap <Leader>a? :echo system("grep 'noremap .Leader.a' ~/.vimrc")<CR>
+vnoremap <Leader>a7 "+y:!start "https://www.copilot.com/" && echo "Copied text to copilot"<CR>
 
 "Miscellaneous Keymaps
 nnoremap ZA :xa<CR>
