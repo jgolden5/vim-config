@@ -1,3 +1,4 @@
 look up some cool vimscript functions in other people's vim configs
 go through vimrc, find something I don't understand, and improve upon it or keep it the same but at least know what it means a little better now
+make a "go to definition" feature which is language-dependent (based on file extension of current file) (note, this would make vim significantly closer to an all-out IDE)
 (sometime) read through the vim manual until I find something interesting enough to add to my vimrc
