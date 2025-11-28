@@ -7,7 +7,8 @@ if [[ $? == 0 ]]; then
     sed -i 's/pbpaste/powershell -command Get-Clipboard/g' vimrc.vim
     message="vimrc copied successfully to ~/.vimrc on your MINGW64 system"
   elif [[ $system_type =~ "Darwin" ]]; then
-    sed -i '' 's/!start/!open/g' vimrc.vim
+    sed -i '' 's/!explorer/!open/g' vimrc.vim
+    sed -i '' 's/powershell -command Get-Clipboard/pbpaste/g' vimrc.vim
     message="vimrc copied successfully to ~/.vimrc on your Darwin system"
   else
     message="System type \"$system_type\" not recognized, no vimrc file transfer was automated"
