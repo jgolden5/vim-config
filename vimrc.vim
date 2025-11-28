@@ -17,6 +17,9 @@ set notimeout "any keys part of a multi-key keymapping will wait indefinitely fo
 set ttimeout "terminal keys (builtin special chars not requiring an additional keypress, such as escape) will time out as indicated by ttimeoutlen var
 set ttimeoutlen=500
 
+"generic movement helps
+nnoremap <Leader>i ggVG:s/    /  /g<CR>
+
 "page navigation
 nnoremap <Leader>d <C-d>zz
 nnoremap <Leader>u <C-u>zz
