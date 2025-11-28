@@ -52,7 +52,9 @@ nnoremap <Leader>p "+p
 
 "visual mode
 vnoremap <Leader>c "+y
+vnoremap <C-c> "+y:echo "copied the following to clipboard: <C-r>+"<CR><Esc>
 vnoremap <Leader>p "+p
+vnoremap <C-v> "+p
 vnoremap <Leader>g "+y:!open "https://www.google.com/search?q=<C-r>+"<CR><CR>
 vnoremap <Leader>s "+y:!open $(pbpaste)<CR><CR>
 
