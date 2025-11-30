@@ -57,6 +57,7 @@ vnoremap <Leader>p "+p
 vnoremap <C-v> "+p
 vnoremap <Leader>g "+y:!open "https://www.google.com/search?q=<C-r>+"<CR><CR>
 vnoremap <Leader>s "+y:!open $(pbpaste)<CR><CR>
+vnoremap <Leader>i :s/    /  /g<CR>
 
 "AI keymaps
 nnoremap <Leader>a? :echo system("grep 'noremap .Leader.a' ~/.vimrc")<CR>
