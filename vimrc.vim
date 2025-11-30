@@ -36,6 +36,7 @@ nnoremap <Leader>J <C-w>J
 nnoremap <Leader>K <C-w>K
 nnoremap <Leader>L <C-w>L
 nnoremap <Leader>= <C-w>=
+nnoremap <Leader>o <C-^>
 
 "tab navigation
 nnoremap <Leader>tc :tabclose<CR>
