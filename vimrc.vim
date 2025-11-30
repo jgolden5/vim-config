@@ -83,4 +83,4 @@ nnoremap !@ :%!
 nnoremap !# ggO<Esc>!!echo $0<CR>I#!<Esc>0
 
 "map helps
-nnoremap <Leader>? :echo system("grep 'noremap .Leader.' ~/.vimrc")<CR>
+nnoremap <Leader>? :echo system("grep 'noremap .Leader.' ~/.vimrc | sort -n")<CR>
