@@ -75,6 +75,9 @@ vnoremap <Leader>a8 "+y:!open "https://www.perplexity.ai/?q=<C-r>+" && echo "Cop
 "Miscellaneous Keymaps
 nnoremap ZA :xa<CR>
 
+"Enter search mode for something case-insensitive
+nnoremap <Leader>/ /\c<Left><Left>
+
 "inline bash keymaps
 nnoremap !@ :%!
 nnoremap !# ggO<Esc>!!echo $0<CR>I#!<Esc>0
