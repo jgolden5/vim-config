@@ -6,10 +6,10 @@ if [[ $? == 0 ]]; then
     sed -i 's/!open/!explorer/g' vimrc.vim #dang it, internet explorer!
     sed -i 's/pbpaste/powershell -command Get-Clipboard/g' vimrc.vim
     message="vimrc copied successfully to ~/.vimrc on your MINGW64 system"
-  elif [[ $system_type =~ "Darwin" ]]; then
+  elif [[ $system_type =~ "Darwin" ]] || [[ $system_type =~ "Linux" ]]; then
     sed -i '' 's/!explorer/!open/g' vimrc.vim
     sed -i '' 's/powershell -command Get-Clipboard/pbpaste/g' vimrc.vim
-    message="vimrc copied successfully to ~/.vimrc on your Darwin system"
+    message="vimrc copied successfully to ~/.vimrc on your Unix-based system"
   else
     message="System type \"$system_type\" not recognized, no vimrc file transfer was automated"
   fi
