@@ -16,5 +16,5 @@ if [[ $? == 0 ]]; then
 else
   echo "something went wrong copying vimrc.vim to ~/.vimrc"
 fi
-cp vimrc.vim ~/.vimrc 
+cp ~/vim-config/vimrc.vim ~/.vimrc 
 echo "$message"
