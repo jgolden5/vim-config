@@ -50,14 +50,14 @@ nnoremap <Leader>nh :set nohlsearch<CR>
 nnoremap <Leader>sh :set hlsearch<CR>
 
 "copy/paste/clipboard
-nnoremap <Leader>ya mmggVG"+y'mzz
-nnoremap <Leader>yp mmvap"+y'm
-nnoremap <Leader>yy V"+y
-nnoremap <Leader>p "+p
+nnoremap <Leader>ya mmggVG"+y'mzz:echo "copied entire current file '<C-r>%' to the clipboard"<CR>
+nnoremap <Leader>yp mmvap"+y'm:echo "copied paragraph to clipboard"<CR>
+nnoremap <Leader>yy V"+y:echo "copied current line to clipboard"<CR>
+nnoremap <Leader>p "+p:echo "pasted from clipboard"<CR>
 
 "visual mode
 vnoremap <Leader>c "+y
-vnoremap <C-c> "+y:echo "copied the following to clipboard: <C-r>+"<CR><Esc>
+vnoremap <C-c> "+y:echo "copied the following to clipboard: <C-r>+"<CR>
 vnoremap <Leader>p "+p
 vnoremap <C-v> "+p
 vnoremap <Leader>g "+y:!open "https://www.google.com/search?q=<C-r>+"<CR><CR>
