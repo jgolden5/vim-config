@@ -56,6 +56,9 @@ nnoremap <Leader>yy V"+y:echo "copied current line to clipboard"<CR>
 nnoremap <Leader>y% :let @+ = @%<CR>:echo "copied file name '<C-r>%' to the clipboard"<CR>
 nnoremap <Leader>p "+p:echo "pasted from clipboard"<CR>
 
+"open something from vim
+nnoremap <Leader>% :!open <C-r>%<CR><CR>
+
 "visual mode
 vnoremap <Leader>c "+y
 vnoremap <C-c> "+y:echo "copied the following to clipboard: <C-r>+"<CR>
