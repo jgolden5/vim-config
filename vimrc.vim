@@ -104,6 +104,7 @@ nnoremap <Leader>/ /\c<Left><Left>
 "inline bash keymaps
 nnoremap !@ :%!
 nnoremap !# ggO<Esc>!!echo $0<CR>I#!<Esc>0
+nnoremap <Leader>; :%!sed -E 's/[^;{}\*\/\\: ]$/&;/'<CR>
 
 "map helps
 nnoremap <Leader>? :echo system("grep 'noremap .Leader.' ~/.vimrc")<CR>
