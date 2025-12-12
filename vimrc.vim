@@ -26,6 +26,10 @@ nnoremap <Leader>u <C-u>zz
 nnoremap <Leader>f <C-f>zz
 nnoremap <Leader>b <C-b>Hzz
 
+"filesystem manipulation
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>x :x<CR>
+
 "window navigation
 nnoremap <Leader>h <C-w>h
 nnoremap <Leader>j <C-w>j
@@ -57,28 +61,28 @@ nnoremap <Leader>y% :let @+ = @%<CR>:echo "copied file name '<C-r>%' to the clip
 nnoremap <Leader>p "+p:echo "pasted from clipboard"<CR>
 
 "open something from vim
-nnoremap <Leader>% :!open <C-r>%<CR><CR>
+nnoremap <Leader>% :!explorer <C-r>%<CR><CR>
 
 "visual mode
 vnoremap <Leader>c "+y
 vnoremap <C-c> "+y:echo "copied the following to clipboard: <C-r>+"<CR>
 vnoremap <Leader>p "+p
 vnoremap <C-v> "+p
-vnoremap <Leader>g "+y:!open "https://www.google.com/search?q=<C-r>+"<CR><CR>
-vnoremap <Leader>s "+y:!open $(pbpaste)<CR><CR>
+vnoremap <Leader>g "+y:!explorer "https://www.google.com/search?q=<C-r>+"<CR><CR>
+vnoremap <Leader>s "+y:!explorer $(powershell -command Get-Clipboard)<CR><CR>
 vnoremap <Leader>i :s/    /  /g<CR>
 
 "AI keymaps
 nnoremap <Leader>a? :echo system("grep 'noremap .Leader.a' ~/.vimrc")<CR>
 vnoremap <Leader>a? :echo system("grep 'noremap .Leader.a' ~/.vimrc")<CR>
-vnoremap <Leader>a1 "+y:!open "https://www.chatgpt.com/?q=<C-r>+" && echo "Copied text to Chat Gippity"<CR><CR>
-vnoremap <Leader>a2 "+y:!open "https://grok.com/?q=<C-r>+" && echo "Copied text to Grok"<CR><CR>
-vnoremap <Leader>a3 "+y:!open "https://gemini.google.com/app"<CR> && echo "Copied text to Gemini"<CR><CR>
-vnoremap <Leader>a4 "+y:!open "https://claude.ai/new?q=<C-r>+" && echo "Copied text to Claude"<CR><CR>
-vnoremap <Leader>a5 "+y:!open "https://chat.mistral.ai/chat/?q=<C-r>+" && echo "Copied text to Mistral"<CR><CR>
-vnoremap <Leader>a6 "+y:!open "https://meta.ai/"<CR> && echo "Copied text to Mistral"<CR><CR>
-vnoremap <Leader>a7 "+y:!open "https://www.copilot.com/"<CR> && echo "Copied text to copilot"<CR><CR>
-vnoremap <Leader>a8 "+y:!open "https://www.perplexity.ai/?q=<C-r>+" && echo "Copied text to copilot"<CR><CR>
+vnoremap <Leader>a1 "+y:!explorer "https://www.chatgpt.com/?q=<C-r>+" && echo "Copied text to Chat Gippity"<CR><CR>
+vnoremap <Leader>a2 "+y:!explorer "https://grok.com/?q=<C-r>+" && echo "Copied text to Grok"<CR><CR>
+vnoremap <Leader>a3 "+y:!explorer "https://gemini.google.com/app"<CR> && echo "Copied text to Gemini"<CR><CR>
+vnoremap <Leader>a4 "+y:!explorer "https://claude.ai/new?q=<C-r>+" && echo "Copied text to Claude"<CR><CR>
+vnoremap <Leader>a5 "+y:!explorer "https://chat.mistral.ai/chat/?q=<C-r>+" && echo "Copied text to Mistral"<CR><CR>
+vnoremap <Leader>a6 "+y:!explorer "https://meta.ai/"<CR> && echo "Copied text to Mistral"<CR><CR>
+vnoremap <Leader>a7 "+y:!explorer "https://www.copilot.com/"<CR> && echo "Copied text to copilot"<CR><CR>
+vnoremap <Leader>a8 "+y:!explorer "https://www.perplexity.ai/?q=<C-r>+" && echo "Copied text to copilot"<CR><CR>
 
 "Optional mapping to toggle quickly
   "Python
