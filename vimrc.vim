@@ -67,6 +67,7 @@ nnoremap <Leader>p "+p:echo "pasted from clipboard"<CR>
 
 "open something from vim
 nnoremap <Leader>% :!explorer <C-r>%<CR><CR>
+nnoremap <Leader>G :!explorer "https://www.google.com/search?q="<Left>
 
 "visual mode
 vnoremap <Leader>c "+y
@@ -78,7 +79,12 @@ vnoremap <Leader>s "+y:!explorer $(powershell -command Get-Clipboard)<CR><CR>
 vnoremap <Leader>i :s/    /  /g<CR>
 
 "AI keymaps
-nnoremap <Leader>a? :echo system("grep 'noremap .Leader.a' ~/.vimrc")<CR>
+nnoremap <Leader>A? :echo system("grep 'noremap .Leader.A' ~/.vimrc")<CR>
+nnoremap <Leader>A1 :!explorer "https://www.chatgpt.com/?q="<Left>
+nnoremap <Leader>A2 :!explorer "https://grok.com/?q="<Left>
+nnoremap <Leader>A4 :!explorer "https://claude.ai/new?q="<Left>
+nnoremap <Leader>A5 :!explorer "https://chat.mistral.ai/chat/?q="<Left>
+nnoremap <Leader>A8 :!explorer "https://www.perplexity.ai/?q="<Left>
 vnoremap <Leader>a? :echo system("grep 'noremap .Leader.a' ~/.vimrc")<CR>
 vnoremap <Leader>a1 "+y:!explorer "https://www.chatgpt.com/?q=<C-r>+" && echo "Copied text to Chat Gippity"<CR><CR>
 vnoremap <Leader>a2 "+y:!explorer "https://grok.com/?q=<C-r>+" && echo "Copied text to Grok"<CR><CR>
