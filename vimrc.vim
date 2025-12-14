@@ -31,6 +31,7 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>x :x<CR>
 nnoremap <Leader>W :wa<CR>
 nnoremap <Leader>X :xa<CR>
+nnoremap <Leader>E :windo e<CR>
 nnoremap <Leader>ve viWy:e <C-r>0<CR>:echo "remember you can switch between files with Leader+o or Ctl+^"<CR>
 nnoremap <Leader>vs viWy:split <C-r>0<CR>
 nnoremap <Leader>vS viWy:vsplit <C-r>0<CR>
