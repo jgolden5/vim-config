@@ -56,8 +56,8 @@ nnoremap <Leader>tp :tabprevious<CR>
 nnoremap <Leader>t> :tabmove<CR>
 
 "keymap settings
-nnoremap <Leader>KH :set nohlsearch<CR>
-nnoremap <Leader>Kh :set hlsearch<CR>
+nnoremap <Leader>mH :set nohlsearch<CR>
+nnoremap <Leader>mh :set hlsearch<CR>
 
 "copy/paste/clipboard
 nnoremap <Leader>ya mmggVG"+y'mzz:echo "copied entire current file '<C-r>%' to the clipboard"<CR>
