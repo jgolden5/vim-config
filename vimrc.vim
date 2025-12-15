@@ -50,9 +50,9 @@ nnoremap <Leader>o <C-^>
 
 "tab navigation
 nnoremap <Leader>tc :tabclose<CR>
-nnoremap <Leader>tn :tabnext<CR>
 nnoremap <Leader>to :tabnew<CR>
-nnoremap <Leader>tp :tabprevious<CR>
+nnoremap K :tabnext<CR>
+nnoremap J :tabprevious<CR>
 nnoremap <Leader>t> :tabmove<CR>
 nnoremap <Leader>t1 :tabn 1<CR>
 nnoremap <Leader>t2 :tabn 2<CR>
