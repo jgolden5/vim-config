@@ -54,6 +54,15 @@ nnoremap <Leader>tn :tabnext<CR>
 nnoremap <Leader>to :tabnew<CR>
 nnoremap <Leader>tp :tabprevious<CR>
 nnoremap <Leader>t> :tabmove<CR>
+nnoremap <Leader>t1 :tabn 1<CR>
+nnoremap <Leader>t2 :tabn 2<CR>
+nnoremap <Leader>t3 :tabn 3<CR>
+nnoremap <Leader>t4 :tabn 4<CR>
+nnoremap <Leader>t5 :tabn 5<CR>
+nnoremap <Leader>t6 :tabn 6<CR>
+nnoremap <Leader>t7 :tabn 7<CR>
+nnoremap <Leader>t8 :tabn 8<CR>
+nnoremap <Leader>t9 :tabn 9<CR>
 
 "keymap settings
 nnoremap <Leader>mh :set hlsearch<CR>
