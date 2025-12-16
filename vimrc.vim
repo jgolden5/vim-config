@@ -51,6 +51,7 @@ nnoremap <Leader>o <C-^>
 "tab navigation
 nnoremap <Leader>tc :tabclose<CR>
 nnoremap <Leader>to :tabnew<CR>
+nnoremap <Leader>tt viWy:tabnew <C-r>0<CR>
 nnoremap K :tabnext<CR>
 nnoremap J :tabprevious<CR>
 nnoremap <Leader>t> :tabmove<CR>
