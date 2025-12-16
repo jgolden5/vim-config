@@ -137,7 +137,7 @@ nnoremap <Leader>/ /\c<Left><Left>
 
 "inline bash keymaps
 nnoremap !@ :%!
-nnoremap !# ggO<Esc>!!echo $0<CR>I#!<Esc>0
+nnoremap !# ggO#!/bin/bash<Esc>j0
 nnoremap <Leader>; mm:%!sed -E 's/[^;{}\*\/\\: ]$/&;/'<CR>'m
 
 "map helps
