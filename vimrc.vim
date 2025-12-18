@@ -10,6 +10,7 @@ set background=dark
 command W write
 command Wn wnext
 command WN wnext
+highlight CursorColumn ctermbg=white
 
 nnoremap <Space> <Nop>
 let mapleader = " "
@@ -140,6 +141,15 @@ nnoremap <Leader>/ /\c<Left><Left>
 nnoremap !@ :%!
 nnoremap !# ggO#!/bin/bash<Esc>j0
 nnoremap <Leader>; mm:%!sed -E 's/[^;{}\*\/\\: ]$/&;/'<CR>'m
+
+function! FlashCursor()
+  set cursorline
+  set cursorcolumn
+  call timer_start(2000, {-> execute('set nocursorline | set nocursorcolumn')})
+endfunction
+
+"cursor
+nnoremap <Leader><Leader> :call FlashCursor()<CR>
 
 "map helps
 nnoremap <Leader>? :echo system("grep 'noremap .Leader.' ~/.vimrc")<CR>
