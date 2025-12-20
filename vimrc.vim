@@ -76,6 +76,7 @@ nnoremap <Leader>mR :set norelativenumber<CR>
 
 "copy/paste/clipboard
 nnoremap <Leader>ya mmggVG"+y'mzz:echo "copied entire current file '<C-r>%' to the clipboard"<CR>
+nnoremap <Leader>yl :t.<Left><Left>
 nnoremap <Leader>yp mmvap"+y'm:echo "copied paragraph to clipboard"<CR>
 nnoremap <Leader>yy V"+y:echo "copied current line to clipboard"<CR>
 nnoremap <Leader>y% :let @+ = @%<CR>:echo "copied file name '<C-r>%' to the clipboard"<CR>
