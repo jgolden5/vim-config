@@ -75,7 +75,7 @@ nnoremap <Leader>mr :set relativenumber<CR>
 nnoremap <Leader>mR :set norelativenumber<CR>
 
 "copy/paste/clipboard
-noremap <Leader>ya mmggVG"+y'mzz:echo "copied entire current file '<C-r>%' to the clipboard"<CR>
+nnoremap <Leader>ya mmggVG"+y'mzz:echo "copied entire current file '<C-r>%' to the clipboard"<CR>
 nnoremap <Leader>yl :t.<Left><Left>
 nnoremap <Leader>yp mmvap"+y'm:echo "copied paragraph to clipboard"<CR>
 nnoremap <Leader>yy V"+y:echo "copied current line to clipboard"<CR>
@@ -87,7 +87,8 @@ nnoremap <Leader>% :!open <C-r>%<CR><CR>
 nnoremap <Leader>G :!open "https://www.google.com/search?q="<Left>
 
 "visual mode
-vnoremap <Leader>y "+y:echo "copied the following to clipboard: <C-r>+"<CR>
+vnoremap <Leader>y "+y
+vnoremap <Leader>c "+y
 vnoremap <C-c> "+y:echo "copied the following to clipboard: <C-r>+"<CR>
 vnoremap <Leader>p "+p
 vnoremap <C-v> "+p
