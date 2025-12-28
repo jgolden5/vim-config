@@ -7,9 +7,9 @@ set showcmd
 set number
 set wildmenu
 set background=dark
-command W write
-command Wn wnext
-command WN wnext
+command! W write
+command! Wn wnext
+command! WN wnext
 highlight CursorColumn ctermbg=white
 
 nnoremap <Space> <Nop>

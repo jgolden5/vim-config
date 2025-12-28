@@ -17,4 +17,5 @@ else
   echo "something went wrong copying vimrc.vim to ~/.vimrc"
 fi
 cp ~/vim-config/vimrc.vim ~/.vimrc 
+cat ~/vim-config/vimrc.vim | grep -v "ttimeoutlen" | grep -v "cterm" | grep -v "background" | grep -v "wildmenu" | grep -v "expandtab" | grep -v "set sw=" | grep -v "set tabstop=" | grep -v "syntax on" | grep -v "timer_start" | grep -v "cursorline" | grep -v "cursorcolumn" > ~/.ideavimrc
 echo "$message"
