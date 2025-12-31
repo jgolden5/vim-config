@@ -32,6 +32,8 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>x :x<CR>
 nnoremap <Leader>W :wa<CR>
 nnoremap <Leader>X :xa<CR>
+nnoremap ZA :xa<CR>
+nnoremap <Leader>Q ZQ
 nnoremap <Leader>E :windo e<CR>
 nnoremap <Leader>e viWy:e <C-r>0<CR>:echo "remember you can switch between files with Leader+o or Ctl+^"<CR>
 nnoremap <Leader>s viWy:split <C-r>0<CR>
@@ -132,9 +134,6 @@ function! TogglePythonIndentationVisualization()
 endfunction
 nnoremap <Leader>Pi :call TogglePythonIndentationVisualization()<CR>
 nnoremap <Leader>P? :echo system("grep 'noremap .Leader.P' ~/.vimrc")<CR>
-
-"Miscellaneous Keymaps
-nnoremap ZA :xa<CR>
 
 "Enter search mode for something case-insensitive
 nnoremap <Leader>/ /\c<Left><Left>
