@@ -118,20 +118,20 @@ vnoremap <Leader>a6 "+y:!open "https://meta.ai/"<CR> && echo "Copied text to Mis
 vnoremap <Leader>a7 "+y:!open "https://www.copilot.com/"<CR> && echo "Copied text to copilot"<CR><CR>
 vnoremap <Leader>a8 "+y:!open "https://www.perplexity.ai/?q=<C-r>+" && echo "Copied text to copilot"<CR><CR>
 
-"Optional mapping to toggle quickly
-  "Python
-  function! TogglePythonIndentationVisualization()
-    let l:pretty = 'tab:>-,space:·'
-    if &listchars ==# l:pretty
-      set nolist
-      set listchars&
-    else
-      set list
-      let &listchars = l:pretty
-    endif
-  endfunction
-  nnoremap <Leader>Pi :call TogglePythonIndentationVisualization()<CR>
-  nnoremap <Leader>P? :echo system("grep 'noremap .Leader.P' ~/.vimrc")<CR>
+"Python
+autocmd BufRead,BufNewFile *.py call TogglePythonIndentationVisualization()
+function! TogglePythonIndentationVisualization()
+  let l:pretty = 'tab:>-,space:·'
+  if &listchars ==# l:pretty
+    set nolist
+    set listchars&
+  else
+    set list
+    let &listchars = l:pretty
+  endif
+endfunction
+nnoremap <Leader>Pi :call TogglePythonIndentationVisualization()<CR>
+nnoremap <Leader>P? :echo system("grep 'noremap .Leader.P' ~/.vimrc")<CR>
 
 "Miscellaneous Keymaps
 nnoremap ZA :xa<CR>
