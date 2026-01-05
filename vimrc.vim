@@ -36,8 +36,8 @@ nnoremap ZA :xa<CR>
 nnoremap <Leader>Q ZQ
 nnoremap <Leader>E :windo e<CR>
 nnoremap <Leader>e viWy:e <C-r>0<CR>:echo "remember you can switch between files with Leader+o or Ctl+^"<CR>
-nnoremap <Leader>vs viWy:split <C-r>0<CR>
-nnoremap <Leader>vS viWy:vsplit <C-r>0<CR>
+nnoremap <Leader>s viWy:split <C-r>0<CR>
+nnoremap <Leader>S viWy:vsplit <C-r>0<CR>
 
 "window navigation
 nnoremap <Leader>h <C-w>h
