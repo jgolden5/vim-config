@@ -86,6 +86,7 @@ nnoremap <Leader>yy V"+y:echo "copied current line to clipboard"<CR>
 nnoremap <Leader>y$ v$h"+y:echo "copied current line (cursor to end of line) to clipboard"<CR>
 nnoremap <Leader>y% :let @+ = @%<CR>:echo "copied file name '<C-r>%' to the clipboard"<CR>
 nnoremap <Leader>p "+p:echo "pasted from clipboard"<CR>
+vnoremap <Leader>x "+d:echo "cut current selection to the clipboard"<CR>
 
 "open something from vim
 nnoremap <Leader>% :!explorer <C-r>%<CR><CR>
