@@ -39,7 +39,7 @@ nnoremap <Leader>e viWy:e <C-r>0<CR>:echo "remember you can switch between files
 nnoremap <Leader>s viWy:split <C-r>0<CR>
 nnoremap <Leader>S viWy:vsplit <C-r>0<CR>
 
-"window navigation
+"window/pane navigation
 nnoremap <Leader>h <C-w>h
 nnoremap <Leader>j <C-w>j
 nnoremap <Leader>k <C-w>k
@@ -48,6 +48,7 @@ nnoremap <Leader>H <C-w>H
 nnoremap <Leader>J <C-w>J
 nnoremap <Leader>K <C-w>K
 nnoremap <Leader>L <C-w>L
+nnoremap <Leader>r <C-w>r
 nnoremap <Leader>= <C-w>=
 nnoremap <Leader>o <C-^>
 
