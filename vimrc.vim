@@ -127,9 +127,9 @@ vnoremap <Leader>a7 "+y:!explorer "https://www.copilot.com/"<CR> && echo "Copied
 vnoremap <Leader>a8 "+y:!explorer "https://www.perplexity.ai/?q=<C-r>+" && echo "Copied text to copilot"<CR><CR>
 
 "Python
-autocmd BufRead,BufNewFile *.py call TogglePythonIndentationVisualization()
-function! TogglePythonIndentationVisualization()
-  let w:pretty = 'tab:>-,leadmultispace: |'
+autocmd BufRead,BufNewFile *.py call ToggleIndentationVisualization()
+function! ToggleIndentationVisualization()
+  let w:pretty = 'tab:>-,leadmultispace:| '
   if &listchars ==# w:pretty
     set nolist
     set listchars =
@@ -138,7 +138,7 @@ function! TogglePythonIndentationVisualization()
     let &listchars = w:pretty
   endif
 endfunction
-nnoremap <Leader>Pi :call TogglePythonIndentationVisualization()<CR>
+nnoremap <Leader>Pi :call ToggleIndentationVisualization()<CR>
 nnoremap <Leader>P? :echo system("grep 'noremap .Leader.P' ~/.vimrc")<CR>
 
 "Enter search mode for something case-insensitive
