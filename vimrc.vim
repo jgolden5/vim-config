@@ -86,6 +86,7 @@ nnoremap <Leader>yy V"+y:echo "copied current line to clipboard"<CR>
 nnoremap <Leader>y$ v$h"+y:echo "copied current line (cursor to end of line) to clipboard"<CR>
 nnoremap <Leader>y% :let @+ = @%<CR>:echo "copied file name '<C-r>%' to the clipboard"<CR>
 nnoremap <Leader>p "+p:echo "pasted from clipboard"<CR>
+nnoremap <Leader>P "+P:echo "pasted from clipboard"<CR>
 vnoremap <Leader>x "+d:echo "cut current selection to the clipboard"<CR>
 
 "open something from vim
@@ -97,6 +98,7 @@ vnoremap <Leader>y "+y
 vnoremap <Leader>c "+y
 vnoremap <C-c> "+y:echo "copied the following to clipboard: <C-r>+"<CR>
 vnoremap <Leader>p "+p
+vnoremap <Leader>P "+P
 vnoremap <C-v> "+p
 vnoremap <Leader>g "+y:!explorer "https://www.google.com/search?q=<C-r>+"<CR><CR>
 vnoremap <Leader>s "+y:!explorer $(powershell -command Get-Clipboard)<CR><CR>
