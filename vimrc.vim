@@ -50,7 +50,7 @@ nnoremap <Leader>K <C-w>K
 nnoremap <Leader>L <C-w>L
 nnoremap <Leader>r <C-w>r
 nnoremap <Leader>= <C-w>=
-nnoremap <Leader>o <C-^>
+nnoremap <Leader>o :w<CR><C-^>
 
 "tab navigation
 nnoremap <Leader>tc :tabclose<CR>
