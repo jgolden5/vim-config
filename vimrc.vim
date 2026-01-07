@@ -129,13 +129,13 @@ vnoremap <Leader>a8 "+y:!explorer "https://www.perplexity.ai/?q=<C-r>+" && echo 
 "Python
 autocmd BufRead,BufNewFile *.py call TogglePythonIndentationVisualization()
 function! TogglePythonIndentationVisualization()
-  let l:pretty = 'tab:>-,leadmultispace: |'
-  if &listchars ==# l:pretty
+  let w:pretty = 'tab:>-,leadmultispace: |'
+  if &listchars ==# w:pretty
     set nolist
-    set listchars&
+    set listchars =
   else
     set list
-    let &listchars = l:pretty
+    let &listchars = w:pretty
   endif
 endfunction
 nnoremap <Leader>Pi :call TogglePythonIndentationVisualization()<CR>
