@@ -2,7 +2,7 @@
 system_type="$(uname -a)"
 message=
 if [[ $? == 0 ]]; then
-  if [[ $system_type =~ "MINGW64" ]]; then
+  if [[ $system_type =~ "MINGW64" ]]; then #an unfortunate side effect of this system automation is it messes with the git diffs because half the time I haven't actually changed anything besides this file. Alternative ideas could include having a separate vimrc based on the system, which is honestly neither a great nor a terrible idea. I'm just going to stick with this one for now, though.
     sed -i 's/!open/!explorer/g' vimrc.vim #dang it, internet explorer!
     sed -i 's/pbpaste/powershell -command Get-Clipboard/g' vimrc.vim
     message="vimrc copied successfully to ~/.vimrc on your MINGW64 system"
