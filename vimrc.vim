@@ -12,6 +12,8 @@ command! Wn wnext
 command! WN wnext
 highlight CursorColumn ctermbg=white
 
+source ~/spreadsheet.vim/plugin/spreadsheet.vim
+
 nnoremap <Space> <Nop>
 let mapleader = " "
 set notimeout "any keys part of a multi-key keymapping will wait indefinitely for the next key until a match or an interrupt
@@ -167,4 +169,4 @@ nnoremap <Leader><Leader> :call FlashCursor()<CR>
 nnoremap <Leader>? :echo system("grep 'noremap .Leader.' ~/.vimrc")<CR>
 
 "fold keymaps
-nnoremap <Leader>z? :echo system("cat ~/vim-config/fold_help.txt")<CR>
+nnoremap <Leader>z? :help zf<CR>
