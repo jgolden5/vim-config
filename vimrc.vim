@@ -1,4 +1,5 @@
 syntax on
+set fileencoding=utf-8
 set tabstop=2 "set number of spaces that tab counts for (aka. tab length)
 set sw=2
 set matchpairs+=<:> "count <> as matches with '%' motion
@@ -11,8 +12,6 @@ command! W write
 command! Wn wnext
 command! WN wnext
 highlight CursorColumn ctermbg=white
-
-source ~/spreadsheet.vim/plugin/spreadsheet.vim
 
 nnoremap <Space> <Nop>
 let mapleader = " "
@@ -92,9 +91,9 @@ nnoremap <Leader>P "+P:echo "pasted from clipboard"<CR>
 vnoremap <Leader>x "+d:echo "cut current selection to the clipboard"<CR>
 
 "open something from vim
-nnoremap <Leader>% :!explorer <C-r>%<CR><CR>
-nnoremap <Leader>G :!explorer "https://www.google.com/search?q="<Left>
-nnoremap <Leader>g viW"+y:!explorer $(powershell -command Get-Clipboard)<CR><CR>
+nnoremap <Leader>% :!open <C-r>%<CR><CR>
+nnoremap <Leader>G :!open "https://www.google.com/search?q="<Left>
+nnoremap <Leader>g viW"+y:!open $(pbpaste)<CR><CR>
 
 "visual mode
 vnoremap <Leader>y "+y
@@ -103,35 +102,35 @@ vnoremap <C-c> "+y:echo "copied the following to clipboard: <C-r>+"<CR>
 vnoremap <Leader>p "+p
 vnoremap <Leader>P "+P
 vnoremap <C-v> "+p
-vnoremap <Leader>g "+y:!explorer "https://www.google.com/search?q=<C-r>+"<CR><CR>
-vnoremap <Leader>s "+y:!explorer $(powershell -command Get-Clipboard)<CR><CR>
+vnoremap <Leader>g "+y:!open "https://www.google.com/search?q=<C-r>+"<CR><CR>
+vnoremap <Leader>s "+y:!open $(pbpaste)<CR><CR>
 vnoremap <Leader>i :s/    /  /g<CR>
 
 "AI keymaps
 nnoremap <Leader>A? :echo system("grep 'noremap .Leader.A' ~/.vimrc")<CR>
-nnoremap <Leader>A1 :!explorer "https://www.chatgpt.com/?q="<Left>
-nnoremap <Leader>A2 :!explorer "https://grok.com/?q="<Left>
+nnoremap <Leader>A1 :!open "https://www.chatgpt.com/?q="<Left>
+nnoremap <Leader>A2 :!open "https://grok.com/?q="<Left>
 nnoremap <Leader>A3 :echo "sorry, Gemini's AI makes it too tricky to copy paste to it from vim :( Type A? for a list of valid AI fill-in searches"<CR>
-nnoremap <Leader>A4 :!explorer "https://claude.ai/new?q="<Left>
-nnoremap <Leader>A5 :!explorer "https://chat.mistral.ai/chat/?q="<Left>
+nnoremap <Leader>A4 :!open "https://claude.ai/new?q="<Left>
+nnoremap <Leader>A5 :!open "https://chat.mistral.ai/chat/?q="<Left>
 nnoremap <Leader>A6 :echo "sorry, Meta's AI makes it too tricky to copy paste to it from vim :( Type A? for a list of valid AI fill-in searches"<CR>
 nnoremap <Leader>A7 :echo "sorry, Copilot's URL makes it too tricky to copy paste to it from vim :( Type A? for a list of valid AI fill-in searches"<CR>
-nnoremap <Leader>A8 :!explorer "https://www.perplexity.ai/?q="<Left>
-nnoremap <Leader>A9 :!explorer "https://www.perplexity.ai/?q="<Left>
-vnoremap <Leader>A1 "+y:!explorer "https://www.chatgpt.com/?q=<C-r>+"<Left>
-vnoremap <Leader>A2 "+y:!explorer "https://grok.com/?q=<C-r>+"<Left>
-vnoremap <Leader>A4 "+y:!explorer "https://claude.ai/new?q=<C-r>+"<Left>
-vnoremap <Leader>A5 "+y:!explorer "https://chat.mistral.ai/chat/?q=<C-r>+"<Left>
-vnoremap <Leader>A8 "+y:!explorer "https://www.perplexity.ai/?q=<C-r>+"<Left>
+nnoremap <Leader>A8 :!open "https://www.perplexity.ai/?q="<Left>
+nnoremap <Leader>A9 :!open "https://www.perplexity.ai/?q="<Left>
+vnoremap <Leader>A1 "+y:!open "https://www.chatgpt.com/?q=<C-r>+"<Left>
+vnoremap <Leader>A2 "+y:!open "https://grok.com/?q=<C-r>+"<Left>
+vnoremap <Leader>A4 "+y:!open "https://claude.ai/new?q=<C-r>+"<Left>
+vnoremap <Leader>A5 "+y:!open "https://chat.mistral.ai/chat/?q=<C-r>+"<Left>
+vnoremap <Leader>A8 "+y:!open "https://www.perplexity.ai/?q=<C-r>+"<Left>
 vnoremap <Leader>a? :echo system("grep 'noremap .Leader.a' ~/.vimrc")<CR>
-vnoremap <Leader>a1 "+y:!explorer "https://www.chatgpt.com/?q=<C-r>+" && echo "Copied text to Chat Gippity"<CR><CR>
-vnoremap <Leader>a2 "+y:!explorer "https://grok.com/?q=<C-r>+" && echo "Copied text to Grok"<CR><CR>
-vnoremap <Leader>a3 "+y:!explorer "https://gemini.google.com/app"<CR> && echo "Copied text to Gemini"<CR><CR>
-vnoremap <Leader>a4 "+y:!explorer "https://claude.ai/new?q=<C-r>+" && echo "Copied text to Claude"<CR><CR>
-vnoremap <Leader>a5 "+y:!explorer "https://chat.mistral.ai/chat/?q=<C-r>+" && echo "Copied text to Mistral"<CR><CR>
-vnoremap <Leader>a6 "+y:!explorer "https://meta.ai/"<CR> && echo "Copied text to Mistral"<CR><CR>
-vnoremap <Leader>a7 "+y:!explorer "https://www.copilot.com/"<CR> && echo "Copied text to copilot"<CR><CR>
-vnoremap <Leader>a8 "+y:!explorer "https://www.perplexity.ai/?q=<C-r>+" && echo "Copied text to copilot"<CR><CR>
+vnoremap <Leader>a1 "+y:!open "https://www.chatgpt.com/?q=<C-r>+" && echo "Copied text to Chat Gippity"<CR><CR>
+vnoremap <Leader>a2 "+y:!open "https://grok.com/?q=<C-r>+" && echo "Copied text to Grok"<CR><CR>
+vnoremap <Leader>a3 "+y:!open "https://gemini.google.com/app"<CR> && echo "Copied text to Gemini"<CR><CR>
+vnoremap <Leader>a4 "+y:!open "https://claude.ai/new?q=<C-r>+" && echo "Copied text to Claude"<CR><CR>
+vnoremap <Leader>a5 "+y:!open "https://chat.mistral.ai/chat/?q=<C-r>+" && echo "Copied text to Mistral"<CR><CR>
+vnoremap <Leader>a6 "+y:!open "https://meta.ai/"<CR> && echo "Copied text to Mistral"<CR><CR>
+vnoremap <Leader>a7 "+y:!open "https://www.copilot.com/"<CR> && echo "Copied text to copilot"<CR><CR>
+vnoremap <Leader>a8 "+y:!open "https://www.perplexity.ai/?q=<C-r>+" && echo "Copied text to copilot"<CR><CR>
 
 "Python
 autocmd BufRead,BufNewFile *.py call ToggleIndentationVisualization()
