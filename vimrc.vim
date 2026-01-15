@@ -86,6 +86,7 @@ nnoremap <Leader>yw viW"+y:echo "copied current word to clipboard"<CR>
 nnoremap <Leader>yy V"+y:echo "copied current line to clipboard"<CR>
 nnoremap <Leader>y$ v$h"+y:echo "copied current line (cursor to end of line) to clipboard"<CR>
 nnoremap <Leader>y% :let @+ = @%<CR>:echo "copied file name '<C-r>%' to the clipboard"<CR>
+nnoremap <Leader>y} V}"+y:echo "copied from current line to end of paragraph to clipboard"<CR>
 nnoremap <Leader>p "+p:echo "pasted from clipboard"<CR>
 nnoremap <Leader>P "+P:echo "pasted from clipboard"<CR>
 vnoremap <Leader>x "+d:echo "cut current selection to the clipboard"<CR>
