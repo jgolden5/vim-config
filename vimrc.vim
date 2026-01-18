@@ -57,6 +57,7 @@ nnoremap <Leader>o :w<CR><C-^>
 nnoremap <Leader>tc :tabclose<CR>
 nnoremap <Leader>te viWy:tabnew <C-r>0<CR>
 nnoremap <Leader>to :tabnew<CR>
+nnoremap <Leader>tO :tab split<CR>gT:x<CR>gt
 nnoremap K :tabnext<CR>
 nnoremap J :tabprevious<CR>
 nnoremap <Leader>t> :tabmove<CR>
