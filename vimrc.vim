@@ -135,7 +135,7 @@ vnoremap <Leader>a7 "+y:!open "https://www.copilot.com/"<CR> && echo "Copied tex
 vnoremap <Leader>a8 "+y:!open "https://www.perplexity.ai/?q=<C-r>+" && echo "Copied text to copilot"<CR><CR>
 
 "Python
-autocmd BufRead,BufNewFile *.py call ToggleIndentationVisualization()
+autocmd BufRead,BufNewFile *.py,*.squash call ToggleIndentationVisualization()
 function! ToggleIndentationVisualization()
   let w:pretty = 'tab:>-,leadmultispace:| '
   if &listchars ==# w:pretty
