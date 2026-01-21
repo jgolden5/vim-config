@@ -55,7 +55,8 @@ nnoremap <Leader>o :w<CR><C-^>
 
 "tab navigation
 nnoremap <Leader>tc :tabclose<CR>
-nnoremap <Leader>te viWy:tabnew <C-r>0<CR>
+nnoremap <Leader>te :tabnew 
+nnoremap <Leader>tE viWy:tabnew <C-r>0<CR>
 nnoremap <Leader>to :tabnew<CR>
 nnoremap <Leader>tO :tab split<CR>gT:x<CR>gt
 nnoremap K :tabnext<CR>
