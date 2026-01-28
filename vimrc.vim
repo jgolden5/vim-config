@@ -36,9 +36,12 @@ nnoremap <Leader>X :xa<CR>
 nnoremap ZA :xa<CR>
 nnoremap <Leader>Q ZQ
 nnoremap <Leader>E :wa<CR>:windo e<CR>
-nnoremap <Leader>e :w<CR>viWy:e <C-r>0<CR>:echo "remember you can switch between files with Leader+o or Ctl+^"<CR>
-nnoremap <Leader>s viWy:split <C-r>0<CR>
-nnoremap <Leader>S viWy:vsplit <C-r>0<CR>
+
+"current word manipulation
+nnoremap <Leader>we :w<CR>viWy:e <C-r>0<CR>:echo "remember you can switch between files with Leader+o or Ctl+^"<CR>
+nnoremap <Leader>ws viWy:split <C-r>0<CR>
+nnoremap <Leader>wS viWy:vsplit <C-r>0<CR>
+nnoremap <Leader>wg viW"+y:!explorer $(powershell -command Get-Clipboard)<CR><CR>
 
 "window/pane navigation
 nnoremap <Leader>h <C-w>h
@@ -96,7 +99,6 @@ vnoremap <Leader>x "+d:echo "cut current selection to the clipboard"<CR>
 "open something from vim
 nnoremap <Leader>% :!explorer <C-r>%<CR><CR>
 nnoremap <Leader>G :!explorer "https://www.google.com/search?q="<Left>
-nnoremap <Leader>g viW"+y:!explorer $(powershell -command Get-Clipboard)<CR><CR>
 
 "visual mode
 vnoremap <Leader>y "+y
