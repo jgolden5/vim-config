@@ -97,6 +97,9 @@ nnoremap <Leader>p "+p:echo "pasted from clipboard"<CR>
 nnoremap <Leader>P "+P:echo "pasted from clipboard"<CR>
 vnoremap <Leader>x "+d:echo "cut current selection to the clipboard"<CR>
 
+"replacement
+nnoremap <Leader>R "+yiw:%s/<C-r>+//gc<Left><Left><Left>
+
 "open something from vim
 nnoremap <Leader>% :!explorer <C-r>%<CR><CR>
 nnoremap <Leader>G :!explorer "https://www.google.com/search?q="<Left>
