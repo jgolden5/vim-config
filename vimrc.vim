@@ -116,6 +116,9 @@ vnoremap <Leader>g "+y:!explorer "https://www.google.com/search?q=<C-r>+"<CR><CR
 vnoremap <Leader>s "+y:!explorer $(powershell -command Get-Clipboard)<CR><CR>
 vnoremap <Leader>i :s/    /  /g<CR>
 
+"insert mode
+inoremap <C-BS> <C-w>
+
 "AI keymaps
 nnoremap <Leader>A? :echo system("grep 'noremap .Leader.A' ~/.vimrc")<CR>
 nnoremap <Leader>A1 :!explorer "https://www.chatgpt.com/?q="<Left>
