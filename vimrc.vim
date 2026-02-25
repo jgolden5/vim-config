@@ -113,6 +113,7 @@ vnoremap <Leader>p "+p
 vnoremap <Leader>P "+P
 vnoremap <C-v> "+p
 vnoremap <Leader>g "+y:!explorer "https://www.google.com/search?q=<C-r>+"<CR><CR>
+vnoremap <Leader>R "+ygv:s/<C-r>+//gc<Left><Left><Left>
 vnoremap <Leader>s "+y:!explorer $(powershell -command Get-Clipboard)<CR><CR>
 vnoremap <Leader>i :s/    /  /g<CR>
 
