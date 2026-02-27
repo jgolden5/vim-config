@@ -35,6 +35,7 @@ nnoremap <Leader>W :wa<CR>
 nnoremap <Leader>X :xa<CR>
 nnoremap ZA :xa<CR>
 nnoremap <Leader>Q ZQ
+nnoremap <Leader>e :e 
 nnoremap <Leader>E :wa<CR>:windo e<CR>
 
 "filesystem manipulation
