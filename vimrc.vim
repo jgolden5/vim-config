@@ -58,6 +58,7 @@ nnoremap <Leader>S :vsplit
 nnoremap <Leader>ve :w<CR>viWy:e <C-r>0<CR>:echo "remember you can switch between files with Leader+o or Ctl+^"<CR>
 nnoremap <Leader>vs viWy:split <C-r>0<CR>
 nnoremap <Leader>vS viWy:vsplit <C-r>0<CR>
+nnoremap <Leader>vt viWy:tabnew <C-r>0<CR>
 
 "window/pane navigation
 nnoremap <Leader>h <C-w>h
