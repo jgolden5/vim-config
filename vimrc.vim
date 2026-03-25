@@ -121,7 +121,7 @@ nnoremap <Leader>R "+yiw:%s/<C-r>+//gc<Left><Left><Left>
 
 "open something from vim
 nnoremap <Leader>G :!explorer "https://www.google.com/search?q="<Left>
-nnoremap <Leader>g viW"+y:!explorer $(powershell -command Get-Clipboard)<CR><CR>
+nnoremap <Leader>g viW"+y:!explorer <C-r>+<CR><CR>
 
 "visual mode
 vnoremap <Leader>y "+y
