@@ -78,6 +78,7 @@ nnoremap <Leader>% :echo expand('%:p')<CR>
 
 "tab navigation
 nnoremap <Leader>tc :tabclose<CR>
+nnoremap <Leader>tx :tabclose<CR>
 nnoremap <Leader>te :tabnew 
 nnoremap <Leader>tE viWy:tabnew <C-r>0<CR>
 nnoremap <Leader>to :tabnew<CR>
