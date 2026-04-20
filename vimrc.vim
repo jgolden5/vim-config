@@ -103,6 +103,8 @@ nnoremap <Leader>mn :set number<CR>
 nnoremap <Leader>mN :set nonumber<CR>
 nnoremap <Leader>mr :set relativenumber<CR>
 nnoremap <Leader>mR :set norelativenumber<CR>
+nnoremap <Leader>mw :set wrap<CR>
+nnoremap <Leader>mW :set nowrap<CR>
 
 "copy/paste/clipboard
 nnoremap <Leader>ya mmggVG"+y'mzz:echo "copied entire current file '<C-r>%' to the clipboard"<CR>
