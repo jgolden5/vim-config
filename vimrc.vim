@@ -95,6 +95,7 @@ nnoremap <Leader>6 :tabn 6<CR>
 nnoremap <Leader>7 :tabn 7<CR>
 nnoremap <Leader>8 :tabn 8<CR>
 nnoremap <Leader>9 :tabn 9<CR>
+nnoremap <Leader>0 :tabn 10<CR>
 
 "keymap settings
 nnoremap <Leader>mh :set hlsearch<CR>
