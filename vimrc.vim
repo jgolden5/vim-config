@@ -19,6 +19,9 @@ set notimeout "any keys part of a multi-key keymapping will wait indefinitely fo
 set ttimeout "terminal keys (builtin special chars not requiring an additional keypress, such as escape) will time out as indicated by ttimeoutlen var
 set ttimeoutlen=500
 
+"I've never used Ex mode and it's so annoying to enter by accident
+nnoremap Q :echo "I got rid of Ex mode because it's annoying. You're welcome."<CR>
+
 "generic movement helps
 nnoremap <Leader>i ggVG:s/    /  /g<CR>
 
