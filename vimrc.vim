@@ -180,7 +180,7 @@ nnoremap <Leader>T% :!explorer <C-r>%<CR><CR>
 nnoremap <Leader>Jp ISystem.out.println();<Esc>hi
 
 "Python
-autocmd BufRead,BufNewFile *.py,*.squash call ToggleIndentationVisualization()
+autocmd BufRead,BufNewFile *.py,*.squash,*.yml,*.yaml call ToggleIndentationVisualization()
 function! ToggleIndentationVisualization()
   let w:pretty = 'tab:>-,leadmultispace:| '
   if &listchars ==# w:pretty
