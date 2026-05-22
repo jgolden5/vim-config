@@ -58,10 +58,16 @@ nnoremap <Leader>n :call RenameFile()<CR>
 
 nnoremap <Leader>s :split 
 nnoremap <Leader>S :vsplit 
+
 nnoremap <Leader>ve :w<CR>viwy:e <C-r>0<CR>:echo "remember you can switch between files with Leader+o or Ctl+^"<CR>
 nnoremap <Leader>vs viwy:split <C-r>0<CR>
 nnoremap <Leader>vS viwy:vsplit <C-r>0<CR>
 nnoremap <Leader>vt viwy:tabnew <C-r>0<CR>
+
+vnoremap <Leader>ve <Esc>:w<CR>gvy:e <C-r>0<CR>:echo "remember you can switch between files with Leader+o or Ctl+^"<CR>
+vnoremap <Leader>vs y:split <C-r>0<CR>
+vnoremap <Leader>vS y:vsplit <C-r>0<CR>
+vnoremap <Leader>vt y:tabnew <C-r>0<CR>
 
 "window/pane navigation
 nnoremap <Leader>h <C-w>h
