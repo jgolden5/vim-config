@@ -153,7 +153,7 @@ vnoremap <Leader>i :s/    /  /g<CR>
 "count-search
 vnoremap <Leader>c :<Backspace><Backspace><Backspace><Backspace><Backspace>echo len(filter(getline("'<","'>"), 'v:val =~ ""'))<Left><Left><Left><Left>
 vnoremap <Leader>C :g//#<Left><Left>
-nnoremap <Leader>c ggvG<Esc>:echo len(filter(getline("'<","'>"), 'v:val =~ ""'))<Left><Left><Left><Left>
+nnoremap <Leader>c jggvG<Esc><C-o><C-o>:echo len(filter(getline("'<","'>"), 'v:val =~ ""'))<Left><Left><Left><Left>
 nnoremap <Leader>C :g//#<Left><Left>
 
 "insert mode
