@@ -149,10 +149,11 @@ vnoremap <Leader>g "+y:!explorer "https://www.google.com/search?q=<C-r>+"<CR><CR
 vnoremap <Leader>R "+ygv:s/<C-r>+//gc<Left><Left><Left>
 vnoremap <Leader>s "+y:!explorer $(powershell -command Get-Clipboard)<CR><CR>
 vnoremap <Leader>i :s/    /  /g<CR>
-  "count-search
-vnoremap <Leader>C :g//#<Left><Left>
-vnoremap <Leader>c :<Backspace><Backspace><Backspace><Backspace><Backspace>echo len(filter(getline("'<","'>"), 'v:val =~ ""'))<Left><Left><Left><Left>
 
+"count-search
+vnoremap <Leader>c :<Backspace><Backspace><Backspace><Backspace><Backspace>echo len(filter(getline("'<","'>"), 'v:val =~ ""'))<Left><Left><Left><Left>
+vnoremap <Leader>C :g//#<Left><Left>
+nnoremap <Leader>c ggvG<Esc>:echo len(filter(getline("'<","'>"), 'v:val =~ ""'))<Left><Left><Left><Left>
 nnoremap <Leader>C :g//#<Left><Left>
 
 "insert mode
