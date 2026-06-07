@@ -158,9 +158,6 @@ nnoremap <Leader>C :g//#<Left><Left>
 
 "insert mode
 inoremap <C-BS> <C-w>
-inoremap <S-Tab> <C-p>
-inoremap <C-f> <C-t>
-inoremap <Tab> <C-n>
 
 "AI keymaps
 nnoremap <Leader>A? :echo system("grep 'noremap .Leader.A' ~/.vimrc")<CR>
