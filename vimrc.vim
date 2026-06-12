@@ -205,6 +205,9 @@ endfunction
 nnoremap <Leader>Pi :call ToggleIndentationVisualization()<CR>
 nnoremap <Leader>P? :echo system("grep 'noremap .Leader.P' ~/.vimrc")<CR>
 
+"Markdown
+nnoremap <Leader>` O```<Esc>jo```<Esc>kI
+
 "Enter search mode for something case-insensitive
 nnoremap <Leader>/ /\c<Left><Left>
 
