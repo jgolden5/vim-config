@@ -8,12 +8,13 @@ set showcmd
 set number
 set wildmenu
 set background=dark
-command! W write
-command! Wn wnext
-command! WN wnext
 highlight CursorColumn ctermbg=white
 
 nnoremap <Space> <Nop>
+
+command! W write
+command! Wn wnext
+command! WN wnext
 let mapleader = " "
 set notimeout "any keys part of a multi-key keymapping will wait indefinitely for the next key until a match or an interrupt
 set ttimeout "terminal keys (builtin special chars not requiring an additional keypress, such as escape) will time out as indicated by ttimeoutlen var
@@ -54,7 +55,6 @@ nnoremap <Leader>Q ZQ
 nnoremap <Leader>e :e 
 nnoremap <Leader>E :wa<CR>:windo e<CR>
 nnoremap <Leader>n :call RenameFile()<CR>
-"nnoremap <Leader>n :let oldfilename = expand('%:p') | file  | call delete(oldfilename) | write <Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>
 
 nnoremap <Leader>s :split 
 nnoremap <Leader>S :vsplit 
@@ -120,7 +120,6 @@ nnoremap <Leader>mW :set nowrap<CR>
 
 "copy/paste/clipboard
 nnoremap <Leader>ya mmggVG"+y'mzz:echo "copied entire current file '<C-r>%' to the clipboard"<CR>
-nnoremap <Leader>yl :t.<Left><Left>
 nnoremap <Leader>yp mmvap"+y'm:echo "copied paragraph to clipboard"<CR>
 nnoremap <Leader>yw viW"+y:echo "copied current word '<C-r>+' to clipboard"<CR>
 nnoremap <Leader>yy V"+y:echo "copied current line to clipboard"<CR>
